@@ -16,15 +16,15 @@ X=ds.iloc[:,[3,4]].values
 from sklearn.cluster import KMeans
 wcss=[]
 
-#for i in range(1,11):
-#    KM=KMeans(n_clusters=i,init='k-means++',n_init=10,max_iter=300,random_state=0)
-#    KM.fit(X)
-#    wcss.append(KM.inertia_)
-#plt.plot(range(1,11),wcss)
-#plt.xlabel('number of clusters')
-#plt.ylabel('wcss')
-#plt.title('Elbow Graph')
-#plt.show()
+for i in range(1,11):
+    KM=KMeans(n_clusters=i,init='k-means++',n_init=10,max_iter=300,random_state=0)
+    KM.fit(X)
+    wcss.append(KM.inertia_)
+plt.plot(range(1,11),wcss)
+plt.xlabel('number of clusters')
+plt.ylabel('wcss')
+plt.title('Elbow Graph')
+plt.show()
 
 
 KM=KMeans(n_clusters=5,init='k-means++',random_state=0)
