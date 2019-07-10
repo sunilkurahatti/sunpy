@@ -18,6 +18,11 @@ classifier.add(Convolution2D(32, 3, 3, input_shape = (64, 64, 3), activation = '
 
 classifier.add(MaxPool2D(pool_size=(2,2)))
 
+classifier.add(Convolution2D(32, 3, 3, activation = 'relu'))
+
+
+classifier.add(MaxPool2D(pool_size=(2,2)))
+
 classifier.add(Flatten())
 
 classifier.add(Dense(activation='relu', output_dim=128))
