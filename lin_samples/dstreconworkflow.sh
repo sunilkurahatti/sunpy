@@ -1,0 +1,1 @@
+tartetlworkflow.sh workflow=wf_DST_REIT_SECPOS_RECON folder='~araheja' context=I batch=0ape3 po_id=1000 po_alias=sei batch_dt=20180129 dbconnection_edb=ETL_EDB comp=recon file_type=14 businessdayonly=N job_id=0ape3
