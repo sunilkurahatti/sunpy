@@ -9,6 +9,8 @@ import spacy
 
 nlp=spacy.load('en_core_web_sm')
 
-di=nlp(u"sunil")
+di=nlp(u"sunil kurahatti America running in longing race")
 
-print(di)
+for token in di.ents:
+	print(token)
+
