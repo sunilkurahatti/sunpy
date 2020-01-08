@@ -81,6 +81,17 @@ plt.legend()
 plt.show()
 
 
+#finding optimal K value
+
+from sklearn.metrics import accuracy_score
+
+for i in range(1,30):
+	classifier1=KNeighborsClassifier(n_neighbors=i,metric='minkowski',p=2)
+	classifier1.fit(X_train, y_train)
+	y_pred=classifier1.predict(X_test)
+	accs=accuracy_score(y_test,y_pred)
+	print("K is",i, "and score is",accs)
+
 
 
 
