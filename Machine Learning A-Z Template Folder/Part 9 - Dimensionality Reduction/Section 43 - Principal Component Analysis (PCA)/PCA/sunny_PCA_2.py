@@ -29,6 +29,9 @@ pca=PCA(n_components=None,random_state=0)
 X_train=pca.fit_transform(X_train)
 X_test=pca.transform(X_test)
 explained_varience=pca.explained_variance_
+nv=pca.noise_variance_
+evr=pca.explained_variance_ratio_
+
 
 #apply PCA for 2 components
 pca=PCA(n_components=2,random_state=0)
