@@ -53,5 +53,7 @@ plt.xlabel("Years of Experience")
 plt.ylabel("Salary")
 plt.show()
 
+#prediciting random years of experiance
 
+y_pred=lin_reg2.predict(poly_reg.fit_transform([[7.5]]))
 
